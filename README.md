@@ -1,3 +1,6 @@
+Sure, I've formatted the README for better readability:
+
+```markdown
 # Railways Management System
 
 **Railways Management System** is a comprehensive Python project for managing railway operations. This system provides functionalities for ticket booking, payment verification, and ticket cancellation. It offers an easy-to-use command-line interface for users and administrators.
@@ -24,7 +27,7 @@
 
 ## Installation
 
-1. **Clone the repository:**
+1. **Clone the repository for Linux Users:**
 
    ```bash
    git clone https://github.com/BinaryGhostDev/Railways.git
@@ -42,18 +45,38 @@
    pip install -r requirements.txt
    ```
 
-4. **Run the application:**
+4. **Update these details from `config.py`:**
+   - `user="your_username"`
+   - `password="your_password"`
+   - `database="your_database_name"`
 
+   Admin Login Details:
+   - Username: RajanGoswami
+   - Password: admin
+
+   or
+
+   - Username: admin
+   - Password: admin
+  
+5. **Run the application:**
+
+   - Main File (Always Run This Main File):
+
+     ```bash
+     python main.py
+     ```
+     
    - For users:
 
      ```bash
-     python user_interface.py
+     python user.py
      ```
 
    - For admins:
 
      ```bash
-     python admin_interface.py
+     python admin.py
      ```
 
 ## Usage
@@ -95,3 +118,4 @@
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
