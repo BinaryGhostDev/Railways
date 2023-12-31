@@ -1,0 +1,4 @@
+prettytable==2.2.1
+bcrypt==3.2.0
+mysql-connector-python==8.0.28
+hashlib==20081119
