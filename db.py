@@ -19,9 +19,11 @@ def create_train_booking_tables(connection):
                 email VARCHAR(255) UNIQUE,
                 mobile_number VARCHAR(20) UNIQUE,
                 address TEXT,
-                wallet DECIMAL(10, 2) DEFAULT 0.0
+                wallet DECIMAL(10, 2) DEFAULT 0.0,
+                status VARCHAR(7) DEFAULT 'ACTIVE'
             )
         """)
+
 
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS stations (
@@ -96,7 +98,8 @@ def create_train_booking_tables(connection):
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 username VARCHAR(255) UNIQUE,
                 password_hash VARCHAR(255),
-                full_name VARCHAR(255) NOT NULL
+                full_name VARCHAR(255) NOT NULL,
+                status VARCHAR(7) NOT NULL
             )
         """)
 
