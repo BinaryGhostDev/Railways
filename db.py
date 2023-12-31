@@ -103,6 +103,17 @@ def create_train_booking_tables(connection):
             )
         """)
 
+
+        # Adding Dummy Admin Record
+        cursor.execute("""INSERT INTO `admin` (`username`, `password_hash`, `full_name`, `status`) VALUES
+            ('admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'Admin', 'ACTIVE'),
+            ('Telson', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'Telson Ven', 'BLOCKED')""")
+        
+
+        # Adding Admin Record
+        cursor.execute("""INSERT INTO `admin` (`username`, `password_hash`, `full_name`, `status`) VALUES
+            ('RajanGoswami', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'Rajan Goswami')""")
+
         connection.commit()
         cursor.close()
         # print("Tables created or updated successfully!")
