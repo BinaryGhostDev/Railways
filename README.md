@@ -45,6 +45,8 @@
    ```
 
 4. **Update these details from `config.py`:**
+   Note :- You have to create database manually !!
+   
    - `user="your_username"`
    - `password="your_password"`
    - `database="your_database_name"`
@@ -58,7 +60,7 @@
    - Username: admin
    - Password: admin
   
-5. **Run the application:**
+6. **Run the application:**
 
    - Main File (Always Run This Main File):
 
