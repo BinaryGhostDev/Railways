@@ -1,6 +1,3 @@
-Sure, I've formatted the README for better readability:
-
-```markdown
 # Railways Management System
 
 **Railways Management System** is a comprehensive Python project for managing railway operations. This system provides functionalities for ticket booking, payment verification, and ticket cancellation. It offers an easy-to-use command-line interface for users and administrators.
@@ -118,4 +115,3 @@ Sure, I've formatted the README for better readability:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
