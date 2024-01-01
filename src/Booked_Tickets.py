@@ -305,7 +305,7 @@ def cancel_booked_ticket(connection, current_user):
 
         # Fetch the booked ticket details
         cursor.execute("""
-            SELECT PNR, train_name, passenger_name, Departure, Arrival, seat_class, seat, fare, journey_date, status
+            SELECT booked_user_id, PNR, train_name, passenger_name, Departure, Arrival, seat_class, seat, fare, journey_date, status
             FROM bookings
             WHERE booked_user_id = %s AND PNR = %s
         """, (current_user['id'], pnr))
