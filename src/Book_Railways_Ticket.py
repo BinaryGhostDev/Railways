@@ -151,8 +151,8 @@ def book_railways_ticket(connection, current_user):
             # Ask for passenger details
             passenger_name = input("Enter Passenger Name: ")
             dob = input("Enter Date of Birth (YYYY-MM-DD): ")
-            aadhar_number = input("Enter Aadhar Number: ")
-            mobile_number = input("Enter Mobile Number: ")
+            aadhar_number = input("Enter Aadhar Number ( 12 Digit ): ")
+            mobile_number = input("Enter Mobile Number +91 : ")
 
             pnr = random.randint(1000000, 9999999)
             status ="BOOKED"
