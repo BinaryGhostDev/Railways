@@ -63,8 +63,8 @@ def create_train_booking_tables(connection):
                 PNR INT NOT NULL,
                 passenger_name VARCHAR(255) DEFAULT NULL,
                 dob DATE DEFAULT NULL,
-                aadhar_number INT NOT NULL,
-                mobile_number INT NOT NULL,
+                aadhar_number INT(13) NOT NULL,
+                mobile_number INT(11) NOT NULL,
                 boarding_station_code VARCHAR(10) DEFAULT NULL,
                 destination_station_code VARCHAR(10) DEFAULT NULL,
                 train_name VARCHAR(255) DEFAULT NULL,
@@ -99,7 +99,7 @@ def create_train_booking_tables(connection):
                 username VARCHAR(255) UNIQUE,
                 password_hash VARCHAR(255),
                 full_name VARCHAR(255) NOT NULL,
-                status VARCHAR(7) NOT NULL
+                status VARCHAR(7) DEFAULT 'ACTIVE'
             )
         """)
 
